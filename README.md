@@ -1,7 +1,7 @@
 # AndroidDebloater
 ## Introduction
 
-This project provides a Windows batch script that will help you debloat Android devices via ADB (Android Debug Bridge). Tested specifically on the Samsung Galaxy F05 (India variant), this script should work on most Samsung (or other android) phones with minor modifications. Debloating can improve performance, reduce unnecessary background processes, and free up storage by removing unwanted system apps and bloatware.
+This project provides a Windows batch script that will help you debloat Android devices via ADB (Android Debug Bridge). Tested specifically on the Samsung Galaxy F05 (India variant), this script should work on most Android phones with minor modifications. Debloating can improve performance, reduce unnecessary background processes, and free up storage by removing unwanted system apps and bloatware.
 
 ## Description of Files
 
