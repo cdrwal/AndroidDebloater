@@ -1,0 +1,61 @@
+# Social Media
+com.facebook.appmanager
+com.facebook.services
+com.facebook.system
+com.facebook.katana
+com.snapchat.android
+
+# Streaming/Entertainment
+com.netflix.mediaclient
+com.spotify.music
+com.mmi.maps
+
+# Third-party Apps
+com.truecaller
+com.phonepe.app
+com.microsoft.skydrive
+com.opera.max.oem
+com.hiya.star
+com.factory.mmigroup
+
+# Samsung Bloat
+com.samsung.android.tvplus
+com.mygalaxy
+comm.global.in
+com.samsung.eadb
+com.samsung.android.themestore
+com.samsung.android.themecenter
+com.samsung.android.stickercenter
+com.samsung.android.forest
+com.samsung.android.app.spage
+com.samsung.discover
+com.samsung.discover.sep
+com.aura.oobe.samsung
+com.samsung.android.kidsinstaller
+com.sec.android.app.kidshome
+com.samsung.android.app.parentalcare
+com.samsung.android.game.gos
+com.samsung.android.game.gamehome
+com.sec.android.app.shealth
+com.samsung.android.app.watchmanager
+com.sec.android.app.fm
+com.samsung.android.voc
+com.sec.android.gallery3d
+com.samsung.sree
+com.samsung.ecomm.global.in
+com.samsung.android.spaymini
+com.samsung.android.smartswitchassistant
+com.sec.android.easyMover
+com.sec.android.easyMover.Agent
+com.samsung.android.app.clockpack
+com.sec.android.app.clockpackage
+com.sec.android.app.samsungapps
+com.samsung.android.scloud
+
+# Redundant Apps - Apps Replaced by Google
+com.sec.android.app.popupcalculator
+com.samsung.android.calendar
+com.samsung.android.app.notes
+com.samsung.android.messaging
+com.sec.android.app.voicenote
+com.samsung.storyservice

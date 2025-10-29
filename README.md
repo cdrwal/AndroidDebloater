@@ -1,60 +1,64 @@
-# SamsungDebloat
+# SamsungDebloater
 ## Introduction
 
-This project provides a set of Windows batch scripts that help you debloat Samsung devices via ADB (Android Debug Bridge). Tested specifically on the Galaxy F05 (India variant), these scripts should work on most Samsung phones with minor modifications. Debloating can improve performance, reduce unnecessary background processes, and free up storage by removing unwanted system apps and bloatware.
+This project provides a Windows batch script that will help you debloat Samsung devices via ADB (Android Debug Bridge). Tested specifically on the Galaxy F05 (India variant), this script should work on most Samsung (or other android) phones with minor modifications. Debloating can improve performance, reduce unnecessary background processes, and free up storage by removing unwanted system apps and bloatware.
 
 ## Description of Files
 
-- **Primer.bat**  
-  Batch script to uninstall user-level apps and bloatware via ADB.
+- **Debloat.bat**  
+  Main batch script to uninstall (or disable) user-level apps or certain system apps (where possible) and bloatware via ADB.
 
-- **SysPrimer.bat**  
-  Batch script to disable or uninstall certain system apps (where possible) via ADB.
+- **AppList.txt**  
+  List of all apps that come pre-installed in the phone (Samsung F05).
 
-- **Packages.txt**  
-  List of all package names (apps) that come installed in the phone.
+- **Packages.txt**   
+   List of all apps that will be uninstalled/disabled.
 
 - **README.md**  
   This documentation file.
 
-## Instructions
+## Setup Instructions
 
-1. **Enable Developer Options on your Android device:**
-   - Go to *Settings > About phone > Software information*.
-   - Tap *Build number* 7 times until you see a message that Developer Mode is enabled.
+### On Your Android Device
 
-2. **Enable USB Debugging:**
-   - Go to *Settings > Developer options*.
-   - Turn on *USB debugging*.
+1. **Enable Developer Options**
+   - Navigate to *Settings → About phone → Software information*
+   - Tap *Build number* 7 times until Developer Mode is enabled
 
-3. **Install ADB on your Windows PC:**
-   - Download [Platform Tools for Windows](https://developer.android.com/tools/releases/platform-tools) from Google's official site.
-   - Extract the zip file and note the folder location.
-   - Add adb to PATH/Environment Variables.
+2. **Enable USB Debugging**
+   - Go to *Settings → Developer options*
+   - Toggle on *USB debugging*
 
-4. **Download the Batch Scripts:**
-   - Download all files from this repository into a folder on your computer.
+3. **Connect to PC**
+   - Connect your device to your PC via USB
+   - When prompted on your phone, allow USB debugging access for the connected computer
 
-5. **Edit `Primer.bat`:**
-   - Open `Primer.bat` in a text editor.
-   - Add, remove, or modify the package names to suit your preferences. Each package should be on a new line.
-   - Do the same for `SysPrimer.bat`.
+### On Your Windows PC
 
-6. **Connect your phone to your PC via USB:**
-   - Allow USB debugging access on your phone when prompted.
+1. **Install ADB**
+   - Download [Platform Tools for Windows](https://developer.android.com/tools/releases/platform-tools)
+   - Extract the zip file to a location of your choice
+   - Add the ADB folder to your system PATH environment variable
 
-7. **Run the Scripts:**
-   - Open Command Prompt in the folder containing your batch scripts and ADB.
-   - First, run `Primer.bat` to remove user apps:
-   - Then, run `SysPrimer.bat` to disable system apps:
+2. **Configure Package List**
+   - Download all files from this repository
+   - Open `Packages.txt` in a text editor
+   - Add, remove, or modify package names according to your needs
+   - Save the file
 
-> **Note:** Always review the packages before running the scripts. Removing essential system apps may cause instability or loss of functionality.
+3. **Run the Debloat Script**
+   - Open Command Prompt in the folder containing the script files
+   - Run: `Debloat.bat`
+
+## Important Notes
+
+- **Review packages carefully** before running the script. Removing essential system apps may cause device instability or loss of functionality.
+- Some packages may be reinstalled after system updates or factory resets.
+- Tested on Samsung F05 (India). May require adjustments for other device models.
 
 ## Disclaimer
 
-- Use these scripts at your own risk. Removing critical apps may affect device stability.
-- Some packages may be reinstalled after system updates or factory reset.
-- Tested on Samsung F05 (India), may require tweaks for other models.
+Use this tool at your own risk. The author is not responsible for any damage or data loss resulting from improper use.
 
 ## Credits
 
