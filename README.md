@@ -8,6 +8,9 @@ This project provides a Windows batch script that will help you debloat Android 
 - **Debloat.bat**  
   Main batch script to uninstall (or disable) user-level apps or certain system apps (where possible) and bloatware via ADB.
 
+- **ExportAppList.bat**    
+   Get a list of all apps installed on your phone.
+
 - **AppList.txt**  
   List of all apps that come pre-installed in the phone (Samsung F05).
 
@@ -42,6 +45,7 @@ This project provides a Windows batch script that will help you debloat Android 
 
 2. **Configure Package List**
    - Download all files from this repository
+   - Run `ExportAppList.bat` to get a list of all apps installed on your device which is exported to `AppList.txt`
    - Open `Packages.txt` in a text editor
    - Add, remove, or modify package names according to your needs
    - Save the file
